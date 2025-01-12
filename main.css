@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --primary-background-color: #0F0F0F;
+    --primary-color: #f1f1f1;
+    --primary-top-menu-font-family: "Roboto", "Arial", sans-serif;
+    --primary-top-menu-font-weight: 700;
+    --primary-top-menu-font-style: normal;
+    --primary-top-menu-icon-background-color: #333333;
+    --primary-scroll-menu-background-color: #282828;
+    --primary-scroll-menu-background-color-hover: #3F3F3F;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-color);
+    font-family: var(--primary-top-menu-font-family);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .top-nav-left {
+    display: flex;
+    align-items: center;
+    width: 20dvw;
+}
+
+header nav .top-nav-left button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    padding: 3px;
+    background-color: var(--primary-background-color);
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+header nav .top-nav-left button>span {
+    font-size: 30px;
+}
+
+header nav .top-nav-left button:hover {
+    background-color: var(--primary-top-menu-icon-background-color);
+}
+
+header nav .top-nav-left .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header nav .top-nav-left .logo p {
+    margin-left: 2px;
+    transform: scaleY(1.5);
+    font-weight: 400;
+}
+
+header nav .top-nav-left .logo p sup {
+    font-size: 8px;
+    font-weight: lighter;
+    color: rgb(160, 153, 153);
+    ;
+}
+
+header nav .top-nav-left .logo svg {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+header nav .top-nav-middle {
+    width: 60dvw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav .top-nav-middle .search-box {
+    display: flex;
+    align-items: center;
+}
+
+header nav .top-nav-middle .search-box input {
+    width: 42dvw;
+    height: 38px;
+    outline: none;
+    border: 1px solid var(--primary-top-menu-icon-background-color);
+    background-color: var(--primary-background-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-indent: 10px;
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+header nav .top-nav-middle .search-box button {
+    height: 42px;
+    background-color: var(--primary-top-menu-icon-background-color);
+    cursor: pointer;
+    color: var(--primary-color);
+    border: none;
+    width: 4dvw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header nav .top-nav-middle .search-box button span {
+    font-size: 35px;
+}
+
+header nav .top-nav-middle>button {
+    background-color: var(--primary-top-menu-icon-background-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 1%;
+    border-radius: 50%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+header nav .top-nav-right {
+    display: flex;
+}
+
+
+header nav .top-nav-right span {
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+header nav .top-nav-right span:hover {
+    background-color: var(--primary-top-menu-icon-background-color);
+}
+
+header nav .top-nav-right details {
+    position: relative;
+}
+
+header nav .top-nav-right details summary {
+    list-style-type: none;
+}
+
+header nav .top-nav-right details .show-account-details {
+    position: absolute;
+    top: 0;
+    right: 4dvw;
+    height: 98dvh;
+    width: 22dvw;
+    background-color: var(--primary-scroll-menu-background-color);
+    border-radius: 10px;
+    z-index: 9999;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+header nav .top-nav-right details .show-account-details .account {
+    display: flex;
+    margin: 5px 0px;
+}
+
+header nav .top-nav-right details .show-account-details .account span {
+    font-size: 50px;
+}
+
+header nav .top-nav-right details .show-account-details .account span:hover {
+    background-color: var(--primary-scroll-menu-background-color);
+}
+
+header nav .top-nav-right details .show-account-details .account .account-nominee p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+
+header nav .top-nav-right details .show-account-details .account .account-nominee a {
+    text-decoration: none;
+    color: rgb(24, 168, 224);
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+header nav .top-nav-right details .show-account-details .account-settings {
+    margin-bottom: 10px;
+}
+
+header nav .top-nav-right details .show-account-details .account-settings .account-settings-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 15px;
+    cursor: pointer;
+}
+
+header nav .top-nav-right details .show-account-details .account-settings .account-settings-item:hover,
+header nav .top-nav-right details .show-account-details .account-settings .account-settings-item:hover span {
+    background-color: var(--primary-scroll-menu-background-color-hover);
+}
+
+header nav .top-nav-right details .show-account-details .account-settings .account-settings-item span {
+    padding: 0;
+    white-space: nowrap;
+}
+
+header nav .top-nav-right details .show-account-details .account-settings .account-settings-item span:nth-child(2),
+header nav .top-nav-right details .show-account-details .account-settings .account-settings-item span > span:first-child {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------------------------------------------main-------------------------------------------------------------------------- */
+main {
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    height: 87.7dvh;
+}
+
+main section.left-nav {
+    width: 15dvw;
+    height: 88.9dvh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+hr {
+    border: 1px solid var(--primary-top-menu-icon-background-color);
+}
+
+main section.left-nav .left-nav-items .left-nav-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 8px;
+}
+
+main section.left-nav .left-nav-items .left-nav-item:hover {
+    background-color: var(--primary-top-menu-icon-background-color);
+    border-radius: 9px;
+}
+
+main section.left-nav .left-nav-items .left-nav-item span:nth-child(1) {
+    font-size: 27px;
+    margin-right: 10%;
+}
+
+main section.left-nav .left-nav-items .left-nav-item span:nth-child(2) {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main section.left-nav .left-nav-items aside {
+    padding: 5px 8px;
+    font-size: 13px;
+}
+
+main section.left-nav .left-nav-items aside span {
+    margin: 2px;
+}
+
+main section.left-nav .left-nav-items aside span a {
+    text-decoration: none;
+    color: #AAAAAA;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+small {
+    color: #717171;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+/* -------------------------------------------------------------content area------------------------------------------------------ */
+main section.content-area {
+    width: 79dvw;
+    height: 88.9dvh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    position: relative;
+}
+
+main section.content-area .scroll-pane {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding-top: 0.2%;
+    padding-bottom: 0.5%;
+    background-color: var(--primary-background-color);
+    margin-top: -1px;
+}
+
+main section.content-area .scroll-pane span {
+    padding: 0.7%;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 20px 0px 35px rgb(19, 19, 19);
+    z-index: 99999;
+}
+
+main section.content-area .scroll-pane span:first-child{
+    display: none;
+}
+
+main section.content-area .scroll-pane span:hover {
+    background-color: var(--primary-top-menu-icon-background-color);
+}
+
+main section.content-area .scroll-pane .scroll-pane-items {
+    display: flex;
+    width: 76dvw;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+main section.content-area .scroll-pane .scroll-pane-items a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    background-color: var(--primary-scroll-menu-background-color);
+    margin: 0.5%;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    user-select: none;
+}
+
+main section.content-area .scroll-pane .scroll-pane-items a:first-child{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+main section.content-area .scroll-pane .scroll-pane-items a:hover {
+    background-color: var(--primary-scroll-menu-background-color-hover);
+}
+
+/* -------------------------------------------------------------------video area---------------------------------------------------------------------- */
+
+main section.content-area .videos-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4.5%;
+}
+
+main section.content-area .videos-area .video {
+    width: 21.5rem;
+    margin: 0.7%;
+    margin-top: 2.7%;
+    cursor: pointer;
+}
+
+main section.content-area .videos-area .video img {
+    width: inherit;
+    height: 12rem;
+    border-radius: 15px;
+}
+
+main section.content-area .videos-area .video .video-details {
+    display: flex;
+    margin-top: 2%;
+}
+
+main section.content-area .videos-area .video .video-details .channel-logo img {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+}
+
+main section.content-area .videos-area .video .video-details .video-title {
+    margin-left: 5%;
+}
+
+main section.content-area .videos-area .video .video-details .video-title h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.98rem;
+    margin: 0;
+}
+
+main section.content-area .videos-area .video .video-details .video-title span {
+    display: block;
+    color: #AAAAAA;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 0px;
+}
+
+main section.content-area .videos-area .shorts {
+    width: 100%;
+}
+
+main section.content-area .videos-area .shorts .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section.content-area .videos-area .shorts .title h3 {
+    display: flex;
+    align-items: center;
+}
+
+main section.content-area .videos-area .shorts .title button {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main section.content-area .videos-area .shorts .title button:hover {
+    background-color: var(--primary-top-menu-icon-background-color);
+}
+
+main section.content-area .videos-area .shorts .title button span {
+    font-size: 35px;
+}
+
+main section.content-area .videos-area .shorts .shorts-videos {
+    display: flex;
+    flex-direction: row;
+}
+
+main section.content-area .videos-area .shorts .shorts-videos .short {
+    width: 12.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+main section.content-area .videos-area .shorts .shorts-videos .short img {
+    border-radius: 15px;
+    width: inherit;
+    height: 22rem;
+}
+
+main section.content-area .videos-area .shorts .shorts-videos .short .short-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+main section.content-area .videos-area .shorts .shorts-videos .short .short-details .short-title h4 {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main section.content-area .videos-area .shorts .shorts-videos .short .short-details .short-title span {
+    color: #AAAAAA;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main section.content-area .videos-area .shorts .load-more-btn {
+    position: relative;
+    margin-top: 2rem;
+}
+
+main section.content-area .videos-area .shorts .load-more-btn button {
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--primary-top-menu-icon-background-color);
+    color: var(--primary-color);
+    padding: 0.3% 10%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    top: -15px;
+    right: 24.5rem;
+    font-size: 14px;
+}
+
+main section.content-area .videos-area .shorts .load-more-btn button:hover {
+    background-color: var(--primary-top-menu-icon-background-color);
+}

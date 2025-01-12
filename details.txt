@@ -1,0 +1,2 @@
+in width 1310 the side nav bar closes
+in width 1080 only two thumbnails were shown at 472 x 265 shorts were 3 with 310 x 550
